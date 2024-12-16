@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*:focus {
+  @apply outline-accent;
+}
+
+.nav-link {
+  @apply flex items-center gap-1 px-2 duration-300 hover:text-accent hover:underline dark:hover:text-accent-light;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-secondary-subtle;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-secondary-dark dark:bg-secondary-light;
+}
+
+/* label & inputs */
+label {
+  @apply flex flex-col gap-2 w-[90%];
+
+  & input,
+  & textarea,
+  & select {
+    @apply p-2 border rounded text-dark border-secondary-dark;
+  }
+
+  & textarea {
+    @apply resize-none;
+  }
+}
+
+/* buttons */
+.btn {
+  @apply px-4 py-2 font-bold rounded;
+}
+
+.btn-sm {
+  @apply p-0.5 rounded font-semibold;
+}
+
+.btn-primary {
+  @apply border bg-primary hover:bg-primary-subtle text-primary-subtle border-primary-dark hover:text-primary-dark;
+}
+
+.btn-secondary {
+  @apply border bg-secondary hover:bg-secondary-subtle text-secondary-subtle border-secondary-dark hover:text-secondary-dark;
+}
+
+.btn-danger {
+  @apply border bg-danger hover:bg-danger-subtle text-danger-subtle border-danger-dark hover:text-danger-dark;
+}
+
+.btn-success {
+  @apply border bg-success hover:bg-success-subtle text-success-subtle border-success-dark hover:text-success-dark;
+}
+
+.btn-warning {
+  @apply border bg-warning hover:bg-warning-subtle text-dark border-warning-dark hover:text-warning-dark;
+}
+
+.btn-info {
+  @apply border bg-info hover:bg-info-subtle text-info-subtle border-info-dark hover:text-info-dark;
+}
+
+/* badges */
+.badge {
+  @apply px-1 text-xs rounded-full py-0.5 font-bold;
+}
+
+.badge-primary {
+  @apply border bg-primary-subtle text-primary-dark border-primary-dark;
+}
+
+.badge-secondary {
+  @apply border bg-secondary-subtle text-secondary-dark border-secondary-dark;
+}
+
+.badge-danger {
+  @apply border bg-danger-subtle text-danger-dark border-danger-dark;
+}
+
+.badge-success {
+  @apply border bg-success-subtle text-success-dark border-success-dark;
+}
+
+.badge-warning {
+  @apply border bg-warning-subtle text-warning-dark border-warning-dark;
+}
+
+.badge-info {
+  @apply border bg-info-subtle text-info-dark border-info-dark;
+}

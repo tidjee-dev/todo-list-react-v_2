@@ -50,12 +50,12 @@ Deployed on:
   - Alphabetically by text.
   - By **completion status** (completed or pending).
 
-### 3. **Calendar Integration**
+### 3. **Calendar Integration** (Comming Soon)
 
 - Visualize tasks and subtasks on a calendar for better deadline tracking.
 - Seamlessly adjust dates and manage schedules directly within the calendar.
 
-### 4. **Data Management**
+### 4. **Data Management** (Comming Soon)
 
 - Automatically save tasks and subtasks to **LocalStorage** for persistent data across sessions.
 - Import/export tasks and subtasks in **JSON** or **CSV** (separator: `;`) formats for backup or sharing.
